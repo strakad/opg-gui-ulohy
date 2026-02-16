@@ -12,6 +12,7 @@ public class Controller {
 
     @FXML
     private TextField counterField;
+    private TextField textField;
 
     @FXML
     private void incrementCounter() {
