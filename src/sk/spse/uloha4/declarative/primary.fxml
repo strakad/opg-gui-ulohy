@@ -3,25 +3,71 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
-<HBox xmlns="http://javafx.com/javafx/21"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="sk.spse.uloha4.declarative.Controller"
-      alignment="CENTER"
-      spacing="20">
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
 
-    <padding>
-        <Insets topRightBottomLeft="10" />
-    </padding>
+<BorderPane xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sk.spse.uloha4.declarative.Controller">
 
-    <Label text="Počítadlo:" />
+    <center>
+        <TilePane prefColumns="4">
 
-    <TextField fx:id="counterField"
-               text="0"
-               editable="false"
-               style="-fx-padding: 10 20 10 20;" />
+            <VBox fx:id="vbox1" alignment="CENTER" prefHeight="250" prefWidth="200" style="-fx-background-color: blue;">
+                <ImageView fitWidth="120" preserveRatio="true">
+                    <image>
+                        <Image url="@soup2.png" />
+                    </image>
+                </ImageView>
+            </VBox>
 
-    <Button text="Plus 1"
-            onAction="#incrementCounter" />
-</HBox>
+            <VBox fx:id="vbox2" alignment="CENTER" prefHeight="250" prefWidth="200" style="-fx-background-color: yellow;">
+                <ImageView fitWidth="120" preserveRatio="true">
+                    <image>
+                        <Image url="@soup2.png" />
+                    </image>
+                </ImageView>
+            </VBox>
+
+            <VBox fx:id="vbox3" alignment="CENTER" prefHeight="250" prefWidth="200" style="-fx-background-color: green;">
+                <ImageView fitWidth="120" preserveRatio="true">
+                    <image>
+                        <Image url="@soup2.png" />
+                    </image>
+                </ImageView>
+            </VBox>
+
+            <VBox fx:id="vbox4" alignment="CENTER" prefHeight="250" prefWidth="200" style="-fx-background-color: red;">
+                <ImageView fitWidth="120" preserveRatio="true">
+                    <image>
+                        <Image url="@soup2.png" />
+                    </image>
+                </ImageView>
+            </VBox>
+
+        </TilePane>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER_LEFT" spacing="20">
+            <padding>
+                <Insets topRightBottomLeft="10" />
+            </padding>
+         <VBox prefHeight="35.0" prefWidth="334.0">
+            <children>
+      
+                  <Label text="&quot;In the future, everyone will be world-famous for 15 minutes&quot;" />
+               <Label text="- Andy Warhol" />
+            </children>
+         </VBox>
+         <Label prefHeight="18.0" prefWidth="261.0" HBox.hgrow="ALWAYS" />
+
+            <Button onAction="#randomize" text="Randomize" />
+
+            <Button onAction="#closeApp" text="Close" />
+        </HBox>
+    </bottom>
+
+</BorderPane>
