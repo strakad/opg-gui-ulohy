@@ -16,34 +16,26 @@
         <TilePane prefColumns="4">
 
             <VBox fx:id="vbox1" alignment="CENTER" prefHeight="250" prefWidth="200" style="-fx-background-color: blue;">
-                <ImageView fitWidth="120" preserveRatio="true">
-                    <image>
-                        <Image url="@soup2.png" />
-                    </image>
+                <ImageView fx:id="imageView1" fitWidth="120" preserveRatio="true">
+                    <image><Image url="@soup2.png" /></image>
                 </ImageView>
             </VBox>
 
             <VBox fx:id="vbox2" alignment="CENTER" prefHeight="250" prefWidth="200" style="-fx-background-color: yellow;">
-                <ImageView fitWidth="120" preserveRatio="true">
-                    <image>
-                        <Image url="@soup2.png" />
-                    </image>
+                <ImageView fx:id="imageView2" fitWidth="120" preserveRatio="true">
+                    <image><Image url="@soup2.png" /></image>
                 </ImageView>
             </VBox>
 
             <VBox fx:id="vbox3" alignment="CENTER" prefHeight="250" prefWidth="200" style="-fx-background-color: green;">
-                <ImageView fitWidth="120" preserveRatio="true">
-                    <image>
-                        <Image url="@soup2.png" />
-                    </image>
+                <ImageView fx:id="imageView3" fitWidth="120" preserveRatio="true">
+                    <image><Image url="@soup2.png" /></image>
                 </ImageView>
             </VBox>
 
             <VBox fx:id="vbox4" alignment="CENTER" prefHeight="250" prefWidth="200" style="-fx-background-color: red;">
-                <ImageView fitWidth="120" preserveRatio="true">
-                    <image>
-                        <Image url="@soup2.png" />
-                    </image>
+                <ImageView fx:id="imageView4" fitWidth="120" preserveRatio="true">
+                    <image><Image url="@soup2.png" /></image>
                 </ImageView>
             </VBox>
 
@@ -57,7 +49,7 @@
             </padding>
          <VBox prefHeight="35.0" prefWidth="334.0">
             <children>
-      
+
                   <Label text="&quot;In the future, everyone will be world-famous for 15 minutes&quot;" />
                <Label text="- Andy Warhol" />
             </children>
